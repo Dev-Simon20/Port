@@ -5,7 +5,7 @@
   
 }
 body{
-  background-color: rgb(242, 243, 244);
+  background-color: #f2f2f2;
 }
 header {
   position: sticky;
@@ -40,12 +40,41 @@ header {
   letter-spacing: 2.5px;
 }
 .contact {
+  position: relative;
   text-decoration: none;
   border-radius: 16px;
   padding: 0.5rem;
-  background-color: #F9A826;
+  /* background-color: #e5920d; */
   font-size: 1.2rem;
+  border: 0.5px solid rgb(149, 146, 146);
 }
+
+.contact::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 35px;
+  background-color: #e5920d;
+  border-radius: 15px;
+  height: 100%;
+  transition: width 0.3s ease, background 0.5s ease;
+  z-index: -1;
+}
+.contact:hover::before{
+    width: 100%;
+    background-color: #e5920d;
+    border-radius: 16px;
+    box-shadow: 4px 4px 5px 0.5px rgb(147, 147, 147);
+
+}
+
+
+
+
+
+
+
 .imag {
   width: 40%;
   height: 5rem;
@@ -74,9 +103,10 @@ main {
   flex-wrap: wrap;
   width: 90%;
   padding: 1rem;
-  background-color: #ffff;
+  background-color: white;
   border-radius: 25px;
   margin-bottom: 3em;
+  z-index: 1;
 }
 .about-text {
   width: 40%;
@@ -97,17 +127,54 @@ main {
   text-align: center;
 }
 .about-text a{
+  position: relative;
   display: inline-block;
   text-decoration: none;
   border-radius: 16px;
   padding: 0.5rem;
-  background-color: #F9A826;
+  border: 0.5px solid rgb(149, 146, 146);
   color: black;
   width: 200px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
+  background-color: transparent;
 }
+.contacto::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 35px;
+  background-color: #e5920d;
+  border-radius: 15px;
+  height: 100%;
+  transition: width 0.3s ease, background 0.5s ease;
+  z-index: -1;
+
+}
+.contacto:hover::before{
+    width: 100%;
+    background-color: #e5920d;
+    border-radius: 16px;
+    box-shadow: 4px 4px 5px 0.5px rgb(147, 147, 147);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about-prog {
   width: 50%;
   box-sizing: border-box;
@@ -171,10 +238,69 @@ main {
   border-radius: 10px;
   background-color: rgb(247, 247, 247);
   box-shadow: 4px 4px 5px 0.5px rgb(147, 147, 147);
-
+  position: relative;background-color: #e5920d;
+  overflow: hidden;
 }
 .skill img{
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  z-index: 50;
+}
+#js{
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+}
 
+
+.circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+  background: #ccc; 
+  
+}
+.wave{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-color: #e5920d;
+}
+.wave::before,
+.wave::after{
+   content: '';
+   position: absolute;
+   width: 200%;
+   height: 200%;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%,-75%);
+}
+
+.wave::before{
+   border-radius: 45%;
+   background: #fff;
+   animation: animate 5s linear infinite;
+}
+
+.wave::after{
+   border-radius: 40%;
+   background:#fff;
+   animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+   0%{
+       transform: translate(-50%,-75%) rotate(0deg);
+   }
+   100%{
+       transform: translate(-50%,-75%) rotate(360deg);
+   }
 }
