@@ -69,12 +69,6 @@ header {
 
 }
 
-
-
-
-
-
-
 .imag {
   width: 40%;
   height: 5rem;
@@ -113,8 +107,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em 20px 0 20px;
-  gap: 4rem;
+  padding: 1.5em 20px 0 20px;
+  gap: 2.5rem;
   min-width: 310px;
 }
 .about-text h2 {
@@ -123,22 +117,29 @@ main {
   letter-spacing: 2px;
 }
 .about-text p {
-  width: 60%;
-  text-align: center;
+  width: 70%;
+  text-align: justify;
+  letter-spacing: 1px;
 }
+
+
+
 .about-text a{
   position: relative;
   display: inline-block;
   text-decoration: none;
   border-radius: 16px;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border: 0.5px solid rgb(149, 146, 146);
   color: black;
-  width: 200px;
+  width: 250px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   background-color: transparent;
+  margin-top: 1em;
+  box-sizing: border-box;
+  letter-spacing: 2px;
 }
 .contacto::before{
   content: '';
@@ -194,6 +195,7 @@ main {
   width: 90%;
   background-color: #ffff;
   border-radius: 25px;
+  padding-bottom: 2em;
 }
 
 .tit{
@@ -217,9 +219,6 @@ main {
 .tit::after{
   right: -100px;
 }
-
-
-
 .habi-content{
   display: flex;
   width: 80%;
@@ -303,4 +302,31 @@ main {
    100%{
        transform: translate(-50%,-75%) rotate(360deg);
    }
+}
+
+.proyect{
+  outline: 1px solid red;
+  padding: 0.5em;
+  margin-top: 2em;
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proyect h2{
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  outline: 1px solid red;
+}
+.proyect hr{
+  color: red;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.proyect p{
+  outline: 1px solid red;
+  text-align: center;
 }
