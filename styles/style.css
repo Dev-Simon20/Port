@@ -421,3 +421,93 @@ main {
     box-shadow: 4px 4px 5px 0.5px rgb(147, 147, 147);
 
 } 
+
+.cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-top: 5em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.info{
+  width: 40%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  
+}
+.dis{
+  text-align: center;
+}
+.ti{
+  font-size: 2em;
+}
+.corr{
+  color: rgb(5, 5, 100);
+}
+
+.form{
+ display: flex;
+ flex-direction: column;
+ width: 40%;
+ max-width: 380px;
+ min-width: 300px;
+ box-sizing: border-box;
+ padding: 20px;
+ padding-top: 50px;
+ -webkit-box-shadow: 14px 11px 18px 8px rgba(0,0,0,0.52);
+ -moz-box-shadow: 14px 11px 18px 8px rgba(0,0,0,0.52);
+  box-shadow: 14px 11px 18px 8px rgba(0,0,0,0.52);
+
+}
+.title{
+ align-self: center;
+ font-size: 1.5em;
+ color: rgb(5, 5, 100);
+ text-align: center;
+}
+.lab{
+  color: rgb(5, 5, 100);
+  margin-top: 30px;
+}
+
+.inp{
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(5, 5, 100);
+  background-color: whitesmoke;
+}
+
+.textarea{
+  resize: none;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 50px;
+}
+
+.sub{
+  border: 1px solid rgb(5, 5, 100);
+  width: 50%;
+  align-self: center;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(5, 5, 100);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.sub:hover{
+  background-color: white;
+  color: rgb(5, 5, 100);
+  
+}
