@@ -408,7 +408,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 90%;
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 1em;
   box-sizing: border-box;
 }
@@ -423,6 +423,7 @@ main {
   background-color: white;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 .dis {
   text-align: center;
@@ -639,17 +640,6 @@ main {
   min-width: 230px;
   
 }
-.site:hover {
-  transform: rotate(-2deg);
-}
-.site img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s;
-}
-.site img:hover {
-  transform: rotate(4deg) scale(1.05);
-}
 
 .desc {
   min-width: 150px;
@@ -686,4 +676,361 @@ main {
 }
 
 
+.cont {
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  margin-bottom: 5em;
+}
+
+.info {
+  width: 100%;
+  min-width: 242px;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+.dis {
+
+}
+.ti {
+
+}
+.corr {
+
+}
+
+.form {
+  width: 100%;
+  min-width: 260px;
+  box-sizing: border-box;
+}
+
+
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+.about {
+  width: 98%;
+  box-sizing: border-box;
+}
+.about-text {
+  width: 40%;
+  padding: 1em 10px 1em 10px;
+  gap: 2rem;
+  min-width: 200px;
+}
+.about-text h2 {
+  font-size: 2em;
+  min-width: 240px;
+}
+.about-text p {
+  width: 100%;
+}
+.about-prog {
+  min-width: 200px;
+}
+.about-prog img {
+  width: 100%;
+}
+
+
+.habi {
+  width: 98%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  overflow: hidden;
+}
+.tit {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+}
+.tit::before {
+  left: -65px;
+  width: 60px;
+}
+.tit::after {
+  right: -65px;
+  width: 60px;
+}
+.habi-content {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+.skill {
+  height: 183px;
+  width: 183px;
+}
+
+/*--------Poyectos-------------------*/
+
+.proyect {
+  padding: 0.5em;
+  margin-top: 2em;
+  width: 98%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proyect h2 {
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+}
+.proyect hr {
+  margin-top: 0.5em;
+  border: 2px solid #e5920d;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.proyect p {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.art {
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 2.5em;
+  padding-top: 0;
+
+}
+
+.site {
+  width: 60%;
+  height: 240px;
+  min-width: 230px;
+  
+}
+.desc {
+  min-width: 150px;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  height: 240px;
+
+}
+.desc a {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.imggit {
+  width: 100%;
+  height: 100%;
+  
+}
+
+#button {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  width: 50%;
+  height: 1em;
+  text-align: center;
+  border-radius: 13px;
+  color: black;
+  font-size: 15px;
+  background-color: #e5920d;
+  overflow: hidden;
+}
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 699px) {
+  *{
+  }
+  
+  header {
+    justify-content: center;
+  }
+  .links {
+    display: none;
+  }
+  .imag {
+    min-width: 200px;
+    padding-left: 0%;
+  }
+  .imag img {
+    width: 100%;
+  }
+
+
+
+
+  /* -----Diseño responsivo para la presentacion */
+
+  main {
+    width: 100%;
+    padding: 0;
+    padding-top: 1em;
+    overflow: hidden;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .about-text {
+    width: 90%;
+    padding: 0.5em;
+    gap: 1rem;
+    min-width: 220px;
+  }
+  .about-text h2 {
+    font-size: 1.8em;
+    min-width: 200px;
+  }
+  .about-text p {
+    width: 95%;
+    text-align: justify;
+  }
+  .about-text a {
+    padding: 0.4em 0.6em;
+    font-size: 1.4rem;
+    margin-top: 0;
+    width: 150px;
+    letter-spacing: 0;
+    background-color: #e5920d;
+  }
+  .about-prog {
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+  }
+  .about-prog img {
+    width: 100%;
+  }
+
+  /*Diseño responsivo para las skills*/
+  .habi {
+    width: 95%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    overflow: hidden;
+  }
+  .tit {
+    font-size: 1.8em;
+    letter-spacing: 0;
+    margin-bottom: 1em;
+  }
+  .tit::before {
+    left: -55px;
+    width: 50px;
+  }
+  .tit::after {
+    right: -55px;
+    width: 50px;
+  }
+  .habi-content {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    min-height: 80vh;
+  }
+  .skill {
+    height: 167px;
+    width: 167px;
+  }
+
+/*Estilizando los proyectos */
+
+.proyect {
+  padding: 0.5em;
+  margin-top: 2em;
+  width: 95%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.proyect h2 {
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+}
+.proyect hr {
+  margin-top: 0.5em;
+  border: 2px solid #e5920d;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.proyect p {
+  text-align: center;
+  background-color: #e5920d;
+  margin-bottom: 1em;
+}
+.art {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.site {
+  width: 80%;
+  height: 200px;
+  min-width: 230px;
+  
+}
+
+.desc {
+  min-width: 150px;
+  width: 80%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: rebeccapurple;
+}
+.desc a {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.imggit {
+  width: 100%;
+  height: 100%;
+  
+}
+
+#button {
+  padding: 0.5em;
+  margin-top: 0;
+  width: 50%;
+  height: 1em;
+  text-align: center;
+  border-radius: 13px;
+  color: black;
+  font-size: 15px;
+  background-color: #e5920d;
+  overflow: hidden;
+}
 }
