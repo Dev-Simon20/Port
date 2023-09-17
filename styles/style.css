@@ -79,6 +79,83 @@ header {
   height: 100%;
 }
 
+/*----------------Boton Hambuerguesa-----------*/
+
+
+.panel{
+    position: fixed;
+    z-index: 990;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--scond-modal-color);
+    width:50%;
+    max-width: 400px;
+    min-width: 300px;
+    transition: transform .5s ease;
+    transform: translate(-100%,0);
+    background-color: #e9edf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel.is-active{
+    transform: translate(0,0);
+}
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 196, 231);
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    gap: 7em;
+    align-items: center;
+    height: 80%;
+    box-sizing: border-box;
+}
+.menu a{
+    display: inline-block;
+    width: 50%;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.3s easer;
+    text-align: start;
+}
+.menu a:hover{
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: var(--main-modal-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /****Presentacion***********/
 main {
   margin: auto;
@@ -624,7 +701,6 @@ main {
 }
 .proyect p {
   text-align: center;
-  background-color: #e5920d;
   margin-bottom: 1em;
 }
 .art {
@@ -983,6 +1059,7 @@ main {
 .proyect p {
   text-align: center;
   margin-bottom: 1em;
+  background-color: aqua;
 }
 .art {
   width: 100%;

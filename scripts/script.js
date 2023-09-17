@@ -1,4 +1,5 @@
 const form=document.querySelector('form');
+import hamburgeMenu from "./menu.js";
 
 form.addEventListener("submit",(event) => {
     event.preventDefault();
@@ -30,3 +31,8 @@ form.addEventListener("submit",(event) => {
     telf.value='';
     mensaje.value='';
   });
+
+const d=document;
+d.addEventListener("DOMContentLoaded",e=>{
+    hamburgeMenu('.panel-btn','.panel','.menu a');
+})
