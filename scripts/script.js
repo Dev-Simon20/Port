@@ -16,13 +16,13 @@ form.addEventListener("submit",(event) => {
     }
     let corpuJson=JSON.stringify(corpu);
     console.log(corpuJson);
-    // fetch("http://localhost:3000/", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: corpuJson
-    // });
+    fetch("https://mailerservice-production.up.railway.app/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: corpuJson
+    });
 
     nombres.value='';
     asunto.value='';
