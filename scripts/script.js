@@ -8,12 +8,14 @@ form.addEventListener("submit",(event) => {
     const correo = document.querySelector("#correo");
     const telf = document.querySelector("#num");
     const mensaje = document.querySelector("#mens");
+    const destino='jeanpierks6@gmail.com'
     let corpu={
       asunto:asunto.value,
       nombres:nombres.value,
       correo:correo.value,
       telefono:telf.value,
-      mensaje:mensaje.value
+      mensaje:mensaje.value,
+      destinatario:destino
     }
     let corpuJson=JSON.stringify(corpu);
     console.log(corpuJson);
